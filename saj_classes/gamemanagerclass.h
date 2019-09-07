@@ -31,8 +31,11 @@ public:
 				cout << b->getName() << " was attacked and sustained " << a->getAttackPower() << " damage from " << a->getName() << "!" << endl;//announces the effect of a's attack on b.
 				cout << b->getName()<<"'s health is now " << b->getHealth() << endl;//displays b's health.
 				//cout << "statusUpdate should be called now." << endl;
-				b->statusUpdate(b);//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.			
-			line();	
+				
+				//b->statusUpdate(b);//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.
+				b->statusUpdate2();//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.			
+			
+				line();	
 		}
 		else return;
 	}

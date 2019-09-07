@@ -18,9 +18,10 @@ public:
 		userSetAttackPower();
 	}
 
-	//~Entity() {
-	//	cout << name << " is defeated!" << endl;
-	//}
+	~Entity() {
+		cout << name << " is defeated!" << endl;
+		//delete this;
+	}
 
 	void userSetName() {//allows user to set entity name.
 		string input;
@@ -75,12 +76,16 @@ public:
 		return attackPower;
 	}
 	
-	void statusUpdate(Entity*a) {
-		if (a->health <= 0) {
-			//delete a; //
-			cout << a->getName() << " is defeated!" << endl;
-			a = NULL;
-			
+	//void statusUpdate(Entity*a) {
+		//if (a->health <= 0) {
+			///delete a; //
+			//cout << a->getName() << " is defeated!" << endl;
+			//a = NULL;
+		//}
+	//}
+	void statusUpdate2() {
+		if (this->health <= 0) {
+			this->~Entity();
 		}
 	}
 

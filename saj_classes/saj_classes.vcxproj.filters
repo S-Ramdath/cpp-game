@@ -18,16 +18,10 @@
     <ClInclude Include="playertoolsclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="humansclass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="gamemanagerclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="entityclass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="deprecatedclasses.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
