@@ -3,8 +3,8 @@
 #include <string>
 #include <time.h>
 //#include "entityclass.h"
-#include "gamemanagerclass.h"
-#include "playerTools.h"
+#include "gamemanager.h"
+#include "playerTools.h" //includes entity.h already
 #include "logger.h"
 using namespace std;
 
@@ -25,22 +25,35 @@ public:
 		getchar();
 	}
 
-	static void createTools(Entity* a, Entity* b) {//
+	static void createToolsAndLinkToolsToEntities(Entity* a, Entity* b) {//
+		tazer* tazerA;
+		tazer* tazerB;
+		healthPack* healthPackA;
+		healthPack* healthPackB;
+		BJT* bjt;
+		tazerA->setOwner(a);
+		tazerB->setOwner(b);
 
 	}
 
-	static void oneAttackTurn(Entity* a,Entity*b) {//a attacks b ONLY.
-		if ((a->getHealth() > 0)&&(b->getHealth()> 0)) {
+	static void linkEntitiesToTools(Entity* a, Entity* b,Tools*tazerA,Tools*tazerB,Tools*healthPackA,Tools*healthPackB,Tools*bjt) {
+		
+		a->setBJT(bjt);
+		b->setBJT(bjt);
+	}
+
+	static void oneAttackTurn(Entity* a, Entity* b) {//a attacks b ONLY.
+		if ((a->getHealth() > 0) && (b->getHealth() > 0)) {
 			line();
-				cout << a->getName() << " attacks and inflicts " << a->getAttackPower() << " damage to " << b->getName() << "!" << endl;//announces a's attack on b.
-				b->setHealth(b->getHealth() - a->getAttackPower());//subtracts a's attackpower from b's health.
-				cout << b->getName()<<"'s health is now " << b->getHealth() << endl;//displays b's health.
-				line();	
+			cout << a->getName() << " attacks and inflicts " << a->getAttackPower() << " damage to " << b->getName() << "!" << endl;//announces a's attack on b.
+			b->setHealth(b->getHealth() - a->getAttackPower());//subtracts a's attackpower from b's health.
+			cout << b->getName() << "'s health is now " << b->getHealth() << endl;//displays b's health.
+			line();
 		}
 		else return;
 	}
 
-	static void playerChoice(Entity*a,Entity*b,Tools*t) {//allows the player (before the other player attacks) controlling entity a (NOTE: a points to the entity.) to evaluate the battle situation and then use tools accordingly.
+	static void playerChoice(Entity* a, Entity* b, Tools* t) {//allows the player (before the other player attacks) controlling entity a (NOTE: a points to the entity.) to evaluate the battle situation and then use tools accordingly.
 		if ((a->getHealth() > 0) && (b->getHealth() > 0)) {
 			//int choice;
 			cout << b->getName() << "'s stats are:\n";
@@ -59,7 +72,7 @@ public:
 			cout << "3. BJT DESIGN PROJECT. (hehehehehehehehehehhehehehehehehehehehehehe!)\n";
 			cout << "4. None. (u a bad man?!)\n";
 
-			choose(a, b, t);
+			//choose(a, b, t);
 
 		}
 		else {
@@ -75,24 +88,24 @@ public:
 		}
 	}
 
-	static void choose(Entity* a, Entity* b, Tools* t) {
+	static void choose(Entity* a, Tools* t) {
 		int choice;
 		cin >> choice;
 		switch (choice) {
 		case 1:
-			t->healthPack(100, a);
+			//a->
 			break;
 		case 2:
-			t->tazer(20, b);
+			//t->tazer(20, b);
 			break;
 		case 3:
-			t->BJT_PROJECT(a, b);
+			//t->BJT_PROJECT(a, b);
 			break;
 		case 4:
 			break;
 		default:
 			cout << "Incorrect selection. Try again:" << endl;
-			choose(a,b,t);
+			//choose(a, b, t);
 		}
 	}
 

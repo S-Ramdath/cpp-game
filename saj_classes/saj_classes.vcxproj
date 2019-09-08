@@ -115,8 +115,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="gamemanager.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="gameManager.h" />
     <ClInclude Include="logger.h" />
     <ClInclude Include="playerTools.h" />
   </ItemGroup>
