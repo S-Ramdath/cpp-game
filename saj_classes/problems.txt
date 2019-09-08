@@ -1,15 +1,4 @@
-if an object is destroyed after the
-1st half round, it the if statement in line  22 still
-evaluates to be true. This results in
-the function in line 23 to use an object
-containing garbage, since this also bypasses the
-if statement (specifically in the name variable) 
-and thus an exception is thrown which stops the program
-at that line (line 23).
-
-More info:
-at line 23 the rest of the attributes
-of the deleted object are large random integers.
-these attributes are readable but it is the
-unreadability of the name attribute that results
-in the exception being thrown.
+Problem:
+"if ((obj1 != NULL) && (obj2 != NULL))" is still allowing objects that have been assigned to NULL through.
+Solution:
+Use a boolean property in entity class to indicate existence state of objects. Manipulation of this boolean will indicate object status (ie dead or alive).
