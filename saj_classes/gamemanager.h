@@ -2,9 +2,9 @@
 #include <iostream>
 #include <string>
 #include <time.h>
-#include "entityclass.h"
+//#include "entityclass.h"
 #include "gamemanagerclass.h"
-#include "playertoolsclass.h"
+#include "playerTools.h"
 #include "logger.h"
 using namespace std;
 
@@ -23,6 +23,10 @@ public:
 		cout << "Press enter to exit." << endl;
 		line();
 		getchar();
+	}
+
+	static void createTools(Entity* a, Entity* b) {//
+
 	}
 
 	static void oneAttackTurn(Entity* a,Entity*b) {//a attacks b ONLY.

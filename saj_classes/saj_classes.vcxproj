@@ -115,10 +115,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="gamemanagerclass.h" />
-    <ClInclude Include="entityclass.h" />
+    <ClInclude Include="gamemanager.h" />
+    <ClInclude Include="entity.h" />
     <ClInclude Include="logger.h" />
-    <ClInclude Include="playertoolsclass.h" />
+    <ClInclude Include="playerTools.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

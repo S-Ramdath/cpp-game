@@ -5,7 +5,7 @@
 using namespace std;
 
 class Entity {
-//protected:
+
 	string name = "";
 	int health=100;
 	int attackPower=10;
