@@ -24,6 +24,9 @@
     <ClInclude Include="entityclass.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="logger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -35,6 +38,9 @@
       <Filter>Resource Files</Filter>
     </Text>
     <Text Include="problems.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="TO-DO.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

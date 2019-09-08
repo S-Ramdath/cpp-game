@@ -15,13 +15,6 @@ public:
 		a->setHealth(-1000000);
 		b->setHealth(-1000000);
 		cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\tBJT DESIGN PROJECT ATTACKS\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
-		
-		//a->statusUpdate2();
-		//a->statusUpdate(a);
-		
-		//b->statusUpdate2();
-		//b->statusUpdate(b);
-		
 		cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\tBJT DESIGN PROJECT WINS\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
 	}
 };

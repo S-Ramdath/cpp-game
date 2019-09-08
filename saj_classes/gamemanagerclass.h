@@ -1,9 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
+#include <time.h>
 #include "entityclass.h"
 #include "gamemanagerclass.h"
 #include "playertoolsclass.h"
+#include "logger.h"
 using namespace std;
 
 class GameManager {
@@ -67,7 +69,7 @@ public:
 			cout << "Attackpower: " << a->getAttackPower() << endl;
 			line();
 
-			cout << "One of you has been already defeated!\n";
+			//cout << "One of you has been already defeated!\n";
 			return; }
 	}
 
@@ -79,7 +81,7 @@ public:
 			t->healthPack(100, a);
 			break;
 		case 2:
-			t->tazer(50, b);
+			t->tazer(20, b);
 			break;
 		case 3:
 			t->BJT_PROJECT(a, b);
@@ -87,6 +89,7 @@ public:
 		case 4:
 			break;
 		default:
+			cout << "Incorrect selection. Try again:" << endl;
 			choose(a,b,t);
 		}
 	}

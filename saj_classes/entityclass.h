@@ -1,9 +1,8 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <time.h>
-using namespace std;
 
+using namespace std;
 
 class Entity {
 //protected:
