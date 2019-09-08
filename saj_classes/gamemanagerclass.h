@@ -28,19 +28,15 @@ public:
 			line();
 				cout << a->getName() << " attacks and inflicts " << a->getAttackPower() << " damage to " << b->getName() << "!" << endl;//announces a's attack on b.
 				b->setHealth(b->getHealth() - a->getAttackPower());//subtracts a's attackpower from b's health.
-				cout << b->getName() << " was attacked and sustained " << a->getAttackPower() << " damage from " << a->getName() << "!" << endl;//announces the effect of a's attack on b.
 				cout << b->getName()<<"'s health is now " << b->getHealth() << endl;//displays b's health.
-				
-				b->statusUpdate2();//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.			
-			
 				line();	
 		}
 		else return;
 	}
 
 	static void playerChoice(Entity*a,Entity*b,Tools*t) {//allows the player (before the other player attacks) controlling entity a (NOTE: a points to the entity.) to evaluate the battle situation and then use tools accordingly.
-		if ((a != NULL)&&(b != NULL)) {
-			int choice = 0;
+		if ((a->getHealth() > 0) && (b->getHealth() > 0)) {
+			//int choice;
 			cout << b->getName() << "'s stats are:\n";
 			cout << "Health: " << b->getHealth() << endl;
 			cout << "Attackpower: " << b->getAttackPower() << endl;
@@ -57,23 +53,8 @@ public:
 			cout << "3. BJT DESIGN PROJECT. (hehehehehehehehehehhehehehehehehehehehehehe!)\n";
 			cout << "4. None. (u a bad man?!)\n";
 
+			choose(a,b,t);
 			
-			cin >> choice;
-			//test user input
-			//while 
-			switch (choice) {
-			case 1:
-				t->healthPack(100, a);
-				break;
-			case 2:
-				t->tazer(50, b);
-				break;
-			case 3:
-				t->BJT_PROJECT(a, b);
-				break;
-			case 4:
-				break;
-			}
 		}
 		else { 
 			cout << b->getName() << "'s stats are:\n";
@@ -88,6 +69,26 @@ public:
 
 			cout << "One of you has been already defeated!\n";
 			return; }
+	}
+
+	static void choose(Entity* a, Entity* b, Tools* t) {
+		int choice;
+		cin >> choice;
+		switch (choice) {
+		case 1:
+			t->healthPack(100, a);
+			break;
+		case 2:
+			t->tazer(50, b);
+			break;
+		case 3:
+			t->BJT_PROJECT(a, b);
+			break;
+		case 4:
+			break;
+		default:
+			choose(a,b,t);
+		}
 	}
 
 	static void line() {//draws a line. 

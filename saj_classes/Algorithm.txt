@@ -1,5 +1,5 @@
 create entities
-	set entity name,health,attack
+	set entity name
 
 while both healths are 0 or greater:
 	display options for e1

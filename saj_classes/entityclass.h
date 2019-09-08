@@ -57,10 +57,4 @@ public:
 	int getAttackPower() {
 		return attackPower;
 	}
-	
-	void statusUpdate2() {
-		if (this->health <= 0) {
-			this->~Entity();
-		}
-	}
 };
