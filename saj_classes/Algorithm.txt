@@ -1,0 +1,8 @@
+create entities
+	set entity name,health,attack
+
+while both healths are 0 or greater:
+	display options for e1
+		attack,tools,pass
+	display options for e2
+		attack,tools,pass

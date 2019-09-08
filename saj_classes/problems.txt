@@ -2,3 +2,5 @@ Problem:
 "if ((obj1 != NULL) && (obj2 != NULL))" is still allowing objects that have been assigned to NULL through.
 Solution:
 Use a boolean property in entity class to indicate existence state of objects. Manipulation of this boolean will indicate object status (ie dead or alive).
+OR
+Check if health is <=0.

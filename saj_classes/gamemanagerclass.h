@@ -24,15 +24,13 @@ public:
 	}
 
 	static void oneAttackTurn(Entity* a,Entity*b) {//a attacks b ONLY.
-		if ((a != NULL)&&(b != NULL)) {
+		if ((a->getHealth() > 0)&&(b->getHealth()> 0)) {
 			line();
 				cout << a->getName() << " attacks and inflicts " << a->getAttackPower() << " damage to " << b->getName() << "!" << endl;//announces a's attack on b.
 				b->setHealth(b->getHealth() - a->getAttackPower());//subtracts a's attackpower from b's health.
 				cout << b->getName() << " was attacked and sustained " << a->getAttackPower() << " damage from " << a->getName() << "!" << endl;//announces the effect of a's attack on b.
 				cout << b->getName()<<"'s health is now " << b->getHealth() << endl;//displays b's health.
-				//cout << "statusUpdate should be called now." << endl;
 				
-				//b->statusUpdate(b);//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.
 				b->statusUpdate2();//check b's status, if it's health<=0 it displays that b is defeated and assigns b's pointer to NULL.			
 			
 				line();	
@@ -106,27 +104,4 @@ public:
 	static void newLine() {
 		cout << "\n";
 	}
-
-	/*void instantiator(GameManager* instance, Entity* m, Entity* n) {
-	instance->line();
-
-	//instance->oneRound(*instance, *n, *m);
-
-	//instance->AttackPrompt();
-	//n->attack();
-	//m->attacked(n->accessAttackPower());
-	//m->statusUpdate(m, instance);
-
-	line();
-
-	//instance->monsterAttackPrompt();
-	//m->attack();
-	//n->attacked(m->accessAttackPower());
-	//n->statusUpdate(n, instance);
-
-	line();
-
-	delete instance;
-}*/
-
 };

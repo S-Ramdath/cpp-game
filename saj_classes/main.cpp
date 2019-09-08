@@ -10,7 +10,8 @@ int main() {
 	Tools *tools = new Tools;
 	
 	instance->pause();
-	while ((obj1 != NULL)&&(obj2 != NULL)) {//inside the loop is the code that represents one round of the game.
+	//while ((obj1 != NULL)&&(obj2 != NULL)) {//inside the loop is the code that represents one round of the game.
+	while ((obj1->alive != false) && (obj2->alive != false)) {//inside the loop is the code that represents one round of the game.
 		//next dev step: get this working then encapsulate this whole round into one function.
 		if ((obj1 != NULL) && (obj2 != NULL))
 			instance->oneAttackTurn(obj1, obj2);//obj1 attacks obj2.
