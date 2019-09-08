@@ -49,28 +49,26 @@ public:
 			cout << "Attackpower: " << a->getAttackPower() << endl;
 			line();
 
-			cout << "Player controlling " << a->getName() << ", before you are attacked, please select one tool that you would like to use:\n";
-			cout << "1: 100-Healthpack.\n";
-			cout << "2: Tazer\n";
+			cout << "Player controlling " << a->getName() << ", please select what you would like to do:\n";
+			cout << "1: Use Healthpack (increases your health by 100)\n";
+			cout << "2: Use Tazer (decreases opponent attack power by 1)\n";
 			cout << "3. BJT DESIGN PROJECT. (hehehehehehehehehehhehehehehehehehehehehehe!)\n";
 			cout << "4. None. (u a bad man?!)\n";
 
-			choose(a,b,t);
-			
+			choose(a, b, t);
+
 		}
-		else { 
+		else {
 			cout << b->getName() << "'s stats are:\n";
 			cout << "Health: " << b->getHealth() << endl;
 			cout << "Attackpower: " << b->getAttackPower() << endl;
 			line();
-
 			cout << a->getName() << "'s stats are:\n";
 			cout << "Health: " << a->getHealth() << endl;
 			cout << "Attackpower: " << a->getAttackPower() << endl;
 			line();
-
-			//cout << "One of you has been already defeated!\n";
-			return; }
+			return;
+		}
 	}
 
 	static void choose(Entity* a, Entity* b, Tools* t) {

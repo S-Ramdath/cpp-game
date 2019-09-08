@@ -42,9 +42,11 @@ void winCheck(Entity*obj1,Entity*obj2) {
 	if (obj2->getHealth() <= 0) {//check obj2 health.
 		delete obj2;//destroy obj2.
 		cout << obj1->getName() << " wins!" << endl;//obj1 wins.
+		return;
 	}
 	if (obj1->getHealth() <= 0) {//check obj1 health.
 		delete obj1;//destroy obj2.
 		cout << obj2->getName() << " wins!" << endl;//obj2 wins.
+		return;
 	}
 }
