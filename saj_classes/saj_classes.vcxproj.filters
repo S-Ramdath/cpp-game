@@ -43,5 +43,8 @@
     <Text Include="TO-DO.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="LATEST.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
