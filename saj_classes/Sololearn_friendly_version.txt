@@ -1,7 +1,6 @@
-#pragma once
 #include <iostream>
 #include <string>
-#include "playerTools.h"
+#include <fstream>
 
 using namespace std;
 
@@ -64,16 +63,6 @@ public:
 	}
 };
 //-------------------------------------------------------------------------------
-#pragma once
-#include <iostream>
-#include <string>
-#include <time.h>
-//#include "entityclass.h"
-#include "gamemanager.h"
-#include "playerTools.h" //includes entity.h already
-#include "logger.h"
-using namespace std;
-
 class GameManager {
 public:
 	GameManager() {
@@ -191,12 +180,6 @@ public:
 	}
 };
 //--------------------------------------------------------------------------------
-#pragma once
-#include <fstream>
-#include <iostream>
-
-using namespace std;
-
 void logger(string a) {//outputs to text file and to console.
 	cout << a;
 	ofstream var("log.txt");
@@ -204,12 +187,6 @@ void logger(string a) {//outputs to text file and to console.
 	var.close();
 }
 //-------------------------------------------------------------------------------------
-#pragma once
-#include <iostream>
-#include "entity.h"
-
-using namespace std;
-
 class Tools {
 protected:
 	Entity* owner = NULL;
@@ -248,8 +225,6 @@ class BJT: public Tools {
 	}
 };
 //--------------------------------------------------------------------------------------------------------------------------------------------
-#include "gamemanager.h" //gamemanager.h includes all other header files.
-
 void winCheck(Entity* obj1, Entity* obj2);
 void test();
 void test2();
