@@ -32,7 +32,7 @@ class tazer : public Tools {
 };
 
 class BJT: public Tools {
-	void use(Entity* a, Entity* b) {// ask a year 2 what will go on heehehehehhe.
+	void use(Entity* a, Entity* b) {// year ones, ask a year 2 what will go on heehehehehhe.
 		if (used == false) {cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\tBJT DESIGN PROJECT COMES INTO THE GAME\t!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
 		a->setHealth(-1000000);
 		b->setHealth(-1000000);
