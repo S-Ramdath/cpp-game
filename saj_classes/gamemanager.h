@@ -3,7 +3,7 @@
 #include <string>
 #include <time.h>
 //#include "entityclass.h"
-#include "gamemanager.h"
+//#include "gamemanager.h"
 #include "playerTools.h" //includes entity.h already
 #include "logger.h"
 using namespace std;
@@ -14,6 +14,7 @@ public:
 		line();
 		cout << "WELCOME TO THE GAME!" << endl;
 		cout << "Press enter to begin." << endl;
+		this->twoPlayerGame;
 		line();
 		getchar();
 	}
@@ -123,4 +124,48 @@ public:
 	static void newLine() {
 		cout << "\n";
 	}
+	
+	static void winCheck(Entity* obj1, Entity* obj2) {
+		if (obj1->getHealth() == -1000000 && obj2->getHealth() == -1000000) {//check if BJT DP was used.
+			return;
+		}
+		if (obj2->getHealth() <= 0) {//check obj2 health.
+			delete obj2;//destroy obj2.
+			cout << obj1->getName() << " wins!" << endl;//obj1 wins.
+			return;
+		}
+		if (obj1->getHealth() <= 0) {//check obj1 health.
+			delete obj1;//destroy obj2.
+			cout << obj2->getName() << " wins!" << endl;//obj2 wins.
+			return;
+		}
+	}
+
+
+	static void twoPlayerGame() {
+		Entity* obj1 = new Entity;
+		Entity* obj2 = new Entity;
+
+		Tools* tools = new Tools;
+
+		pause();
+		//while ((obj1 != NULL)&&(obj2 != NULL)) {//inside the loop is the code that represents one round of the game.
+		while ( ( (obj1->getHealth() > 0) && (obj2->getHealth() > 0) ) || ( (&obj1!=NULL)&&(&obj2!=NULL) ) ) {
+			//inside the loop is the code that represents one round of a two player game.
+			//next dev step: get this working then encapsulate this whole round into one function.
+			if ((obj1->getHealth() > 0) && (obj2->getHealth() > 0)) playerChoice(obj1, obj2, tools);//player controlling obj1 has to choose now.
+			winCheck(obj1, obj2);
+			if ((obj1->getHealth() > 0) && (obj2->getHealth() > 0)) oneAttackTurn(obj1, obj2);//obj1 attacks obj2.
+			winCheck(obj1, obj2);
+			if ((obj1->getHealth() > 0) && (obj2->getHealth() > 0)) playerChoice(obj2, obj1, tools);//player controlling obj2 has to choose now.
+			winCheck(obj1, obj2);
+			if ((obj1->getHealth() > 0) && (obj2->getHealth() > 0)) oneAttackTurn(obj2, obj1);//obj2 attacks obj1.
+			winCheck(obj1, obj2);
+			//one round is complete!
+		}
+		pause();
+	}
+
+	
+
 };

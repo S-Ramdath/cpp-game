@@ -1,30 +1,16 @@
 #include "gamemanager.h" //gamemanager.h includes all other header files.
 
-void winCheck(Entity* obj1, Entity* obj2);
-void test();
+//void winCheck(Entity* obj1, Entity* obj2);
+//void test();
 void test2();
 
 int main() {
-	test();
+	test2();
 	return 0;
 }
 
-void winCheck(Entity*obj1,Entity*obj2) {
-	if (obj1->getHealth() == -1000000 && obj2->getHealth() == -1000000) {//check if BJT DP was used.
-		return;
-	}
-	if (obj2->getHealth() <= 0) {//check obj2 health.
-		delete obj2;//destroy obj2.
-		cout << obj1->getName() << " wins!" << endl;//obj1 wins.
-		return;
-	}
-	if (obj1->getHealth() <= 0) {//check obj1 health.
-		delete obj1;//destroy obj2.
-		cout << obj2->getName() << " wins!" << endl;//obj2 wins.
-		return;
-	}
-}
 
+/*
 void test() {
 	GameManager* instance = new GameManager;
 
@@ -54,7 +40,8 @@ void test() {
 	delete tools;
 	delete instance;
 }
+*/
 
 void test2() {
-
+	GameManager game1;
 }

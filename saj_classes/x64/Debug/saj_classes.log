@@ -1,7 +1,27 @@
 ﻿  main.cpp
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(83,1): error C2039:  'healthPack': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(86,1): error C2039:  'tazer': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(89,1): error C2039:  'BJT_PROJECT': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(12,7): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(12,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(12,19): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(13,7): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(13,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(13,24): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,7): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(56,21): error C2061: syntax error: identifier 'Tools'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(59,26): error C2061: syntax error: identifier 'Tools'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(62,19): error C2061: syntax error: identifier 'Tools'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(57,9): error C2039: 'tazer': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(57,17): error C2065: 'a': undeclared identifier
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(60,9): error C2039: 'healthPack': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(60,22): error C2065: 'a': undeclared identifier
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(63,9): error C2039: 'BJT': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(63,15): error C2065: 'a': undeclared identifier
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(17,7): warning C4551: function call missing argument list
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(42,1): error C2660: 'Entity::setBJT': function does not take 1 arguments
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(62,7): message : see declaration of 'Entity::setBJT'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(43,1): error C2660: 'Entity::setBJT': function does not take 1 arguments
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(62,7): message : see declaration of 'Entity::setBJT'
