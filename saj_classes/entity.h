@@ -11,19 +11,19 @@ class Entity {
 	int attackPower = 10;
 
 	//Tools* tazer = NULL;
-	tazer *tazer;
+	tazer *my_tazer;
 
 	//healthPack* healthPack = NULL;
-	healthPack *healthPack;
+	healthPack *my_healthPack;
 
 	//Tools* BJT = NULL;
-	BJT *BJT;
+	BJT *my_BJT;
 
 public:
 	Entity() {
-		this->tazer = NULL;
-		this->healthPack = NULL;
-		this->BJT = NULL;
+		this->my_tazer = NULL;
+		this->my_healthPack = NULL;
+		this->my_BJT = NULL;
 		cout << "\nEntity created!" << "\n";
 		userSetName();
 	}
@@ -64,12 +64,12 @@ public:
 		cout << this->name << "'s attack power is " << this->attackPower;
 	}
 	void setTazer(tazer* a) {
-		this->tazer = a;
+		this->my_tazer = a;
 	}
 	void setHealthPack(healthPack* a) {
-		this->healthPack = a;
+		this->my_healthPack = a;
 	}
 	void setBJT(BJT* a) {
-		this->BJT = a;
+		this->my_BJT = a;
 	}
 };

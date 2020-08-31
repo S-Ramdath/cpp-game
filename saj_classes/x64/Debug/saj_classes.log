@@ -1,1 +1,41 @@
-﻿
+﻿  main.cpp
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,8): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(14,17): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(17,13): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(17,13): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(17,27): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(20,6): error C2143: syntax error: missing ';' before '*'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(20,6): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(20,13): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(66,21): error C2061: syntax error: identifier 'tazer'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(69,31): error C2061: syntax error: identifier 'healthPack'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(72,17): error C2061: syntax error: identifier 'BJT'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(24,9): error C2039: 'my_tazer': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(25,9): error C2039: 'my_healthPack': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(26,9): error C2039: 'my_BJT': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(67,9): error C2039: 'my_tazer': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(67,20): error C2065: 'a': undeclared identifier
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(70,9): error C2039: 'my_healthPack': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(70,25): error C2065: 'a': undeclared identifier
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(73,9): error C2039: 'my_BJT': is not a member of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(8): message : see declaration of 'Entity'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\entity.h(73,18): error C2065: 'a': undeclared identifier
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\fstream(26,1): error C2059: syntax error: 'namespace'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\fstream(26,1): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\logger.h(5,7): error C2059: syntax error: 'using namespace'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\logger.h(5,20): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(9,7): error C2059: syntax error: 'using namespace'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(9,20): error C2238: unexpected token(s) preceding ';'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(12,40): error C2535: 'void BJT::winCheck(Entity *,Entity *)': member function already defined or declared
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(3): message : see declaration of 'BJT::winCheck'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(28,13): error C2535: 'void BJT::test(void)': member function already defined or declared
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(4): message : see declaration of 'BJT::test'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(58,14): error C2535: 'void BJT::test2(void)': member function already defined or declared
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\main.cpp(5): message : see declaration of 'BJT::test2'
+C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(62): fatal error C1075: '{': no matching token found
