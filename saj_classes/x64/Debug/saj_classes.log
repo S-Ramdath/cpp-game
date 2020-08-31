@@ -1,7 +1,1 @@
-﻿  main.cpp
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(83,1): error C2039:  'healthPack': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(86,1): error C2039:  'tazer': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\gamemanager.h(89,1): error C2039:  'BJT_PROJECT': is not a member of 'Tools'
-C:\Users\Sajjaad Ramdath\Documents\GitHub\cpp-game\saj_classes\playerTools.h(7): message :  see declaration of 'Tools'
+﻿

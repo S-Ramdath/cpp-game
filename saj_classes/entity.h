@@ -7,13 +7,23 @@ using namespace std;
 
 class Entity {
 	string name = "";
-	int health=100;
-	int attackPower=10;
-	Tools* tazer=NULL;
-	Tools* healthPack=NULL;
-	Tools* BJT=NULL;
+	int health = 100;
+	int attackPower = 10;
+
+	//Tools* tazer = NULL;
+	tazer *tazer;
+
+	//healthPack* healthPack = NULL;
+	healthPack *healthPack;
+
+	//Tools* BJT = NULL;
+	BJT *BJT;
+
 public:
 	Entity() {
+		this->tazer = NULL;
+		this->healthPack = NULL;
+		this->BJT = NULL;
 		cout << "\nEntity created!" << "\n";
 		userSetName();
 	}
@@ -53,13 +63,13 @@ public:
 	void displayAttackPower() {
 		cout << this->name << "'s attack power is " << this->attackPower;
 	}
-	void setTazer(Tools*a) {
+	void setTazer(tazer* a) {
 		this->tazer = a;
 	}
-	void setHealthPack(Tools* a) {
+	void setHealthPack(healthPack* a) {
 		this->healthPack = a;
 	}
-	void setBJT(Tools*a) {
+	void setBJT(BJT* a) {
 		this->BJT = a;
 	}
 };
